@@ -6,3 +6,5 @@ script:
   - mkdir -p build/logs
   - phpunit --configuration tests/phpunit.xml
 install: composer update
+after_success:
+  - php vendor/bin/coveralls
