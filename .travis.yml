@@ -2,7 +2,7 @@ language: php
 php:
   - '5.6'
   - '7.0'
-script: phpunit --configuration tests/phpunit.xml
-install:
-  - composer update
-  - ls -l
+script:
+  - mkdir -p build/logs
+  - phpunit --configuration tests/phpunit.xml
+install: composer update

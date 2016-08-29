@@ -1,8 +1,16 @@
 {
-    "name": "smartrade/smartrade-api",
-    "description": "PHP client for Smatrade's api",
-    "license": "MIT",
-    "require": {
-        "php": ">=5.5"
-    }
+	"name": "smartrade/smartrade-api",
+	"description": "PHP client for Smatrade's api",
+	"license": "MIT",
+	"require": {	
+		"php": ">=5.5"
+	},
+	"require-dev": {
+		
+	},
+	"autoload":{
+		"psr-4":{
+			"Smartrade\\": "lib"
+		}
+	}
 }
