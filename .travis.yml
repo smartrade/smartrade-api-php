@@ -8,4 +8,5 @@ script:
   - mkdir -p build/logs
   - phpunit --configuration tests/phpunit.xml
 after_success:
+  - cat build/logs/clover.xml
   - travis_retry php vendor/bin/coveralls -v
